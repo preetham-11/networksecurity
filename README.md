@@ -15,31 +15,33 @@ A comprehensive machine learning project that detects phishing URLs using networ
 
 ## Project Structure
 
+```
 networksecurity/
-├── final_model/                 # Stored models and preprocessors
-│   ├── model.pkl               # Trained ML model
-│   └── preprocessor.pkl        # Data preprocessing pipeline
+├── final_model/
+│   ├── model.pkl
+│   └── preprocessor.pkl
 ├── Network_Data/
-│   └── phisingData.csv         # Original phishing dataset
+│   └── phisingData.csv
 ├── data_schema/
-│   └── schema.yaml             # Data validation schema
+│   └── schema.yaml
 ├── networksecurity/
-│   ├── components/             # Core ML pipeline components
-│   │   ├── data_ingestion.py   # MongoDB data loading and splitting
-│   │   ├── data_validation.py  # Schema validation and drift detection
-│   │   ├── data_transformation.py # Data preprocessing with KNN imputation
-│   │   └── model_trainer.py    # Model training and MLflow tracking
-│   ├── pipeline/               # Pipeline orchestration
-│   │   ├── training_pipeline.py # Complete training workflow
-│   │   └── batch_prediction.py # Batch inference pipeline
-│   ├── utils/                  # Utility modules
-│   └── entity/                 # Configuration classes
-├── templates/                  # HTML templates for web app
-│   └── table.html             # Prediction results template
-├── prediction_output/          # Prediction results storage
-├── app.py                      # FastAPI web application
-├── main.py                     # Training pipeline execution
-└── requirements.txt            # Project dependencies
+│   ├── components/
+│   │   ├── data_ingestion.py
+│   │   ├── data_validation.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   ├── pipeline/
+│   │   ├── training_pipeline.py
+│   │   └── batch_prediction.py
+│   ├── utils/
+│   └── entity/
+├── templates/
+│   └── table.html
+├── prediction_output/
+├── app.py
+├── main.py
+└── requirements.txt
+```
 
 ## Machine Learning Pipeline
 
